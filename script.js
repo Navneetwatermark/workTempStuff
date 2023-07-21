@@ -101,9 +101,34 @@ console.log(temps.every((it) => typeof(it) === typeof(1)));
 console.log(temps.some((it) => typeof(it) === typeof(1)));
 // const/var
 //diff bw let, const and var
+
+
+
+
 // template strings
+
+console.log(`I can use my vars like this ${temps[0]}`);
+// ${any valid JS}
+
+
+
+
+
 // emnhanced object literals
-// rest and spread
+// doubt
+
+
+// rest operator
+let fun1 = (...numbers) => {
+  console.log(numbers);
+  console.log(numbers[0]);
+}
+fun1(1, 2, 3, 8, "hey");
+
+// spread operator
+
+
+
 // Destructuring
 // classes 
 // generators
@@ -113,3 +138,7 @@ console.log(temps.some((it) => typeof(it) === typeof(1)));
 
 // temps.forEach((=))
 
+var a = ()=>{
+  console.log("this function does nothing");
+}
+console.log(typeof(a));a();
